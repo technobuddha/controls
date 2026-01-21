@@ -1,2 +1,1 @@
-export { type PasswordValidationProps } from './password-validation.tsx';
-export { PasswordValidation } from './password-validation-lazy.tsx';
+export { PasswordValidation, type PasswordValidationProps } from './password-validation.tsx';

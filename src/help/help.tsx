@@ -22,7 +22,6 @@ export type HelpProps = {
 
 export const Help: React.FC<HelpProps> = ({ className, style, title, children }) => {
   const { t } = useTranslation();
-  const anchorEl = React.useRef<HTMLDivElement>(null);
   const [open, setOpen] = React.useState(false);
 
   const handleClick = React.useCallback(() => {
@@ -39,12 +38,11 @@ export const Help: React.FC<HelpProps> = ({ className, style, title, children })
   );
 
   const id = open ? 'simple-popover' : undefined;
-  const el = open ? anchorEl.current : undefined;
 
   return (
     <Box className={clsx(css.help, className)} style={style}>
       <Tooltip title={titleText} placement="top">
-        <div ref={anchorEl}>
+        <div>
           <IconButton aria-describedby={id} size="small" onClick={handleClick}>
             <HiMiniInformationCircle className={css.icon} />
           </IconButton>
@@ -52,7 +50,7 @@ export const Help: React.FC<HelpProps> = ({ className, style, title, children })
       </Tooltip>
       <Popover
         id={id}
-        open={Boolean(el)}
+        open={open}
         classes={{ paper: css.paper }}
         anchorReference="anchorPosition"
         // anchorOrigin={{ vertical: 'top', horizontal: 'left' }}

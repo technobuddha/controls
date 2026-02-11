@@ -1,9 +1,8 @@
 //@ts-check
 
-/** @type {import('@technobuddha/builder').Builds} */
+/** @type {import('@technobuddha/project/build').Builds} */
 const config = {
-  dev: {
-    watch: true,
+  build: {
     steps: [
       {
         name: 'Clean',
@@ -11,20 +10,7 @@ const config = {
       },
       {
         name: 'Controls',
-        directory: './src',
-        command: 'tsc --build ./src',
-      },
-    ],
-  },
-  prod: {
-    steps: [
-      {
-        name: 'Clean',
-        command: 'rm -rf ./dist',
-      },
-      {
-        name: 'Controls',
-        command: 'tsc --build ./src',
+        command: 'npx tsc --build ./src',
       },
       {
         name: 'Css',
@@ -34,18 +20,7 @@ const config = {
   },
   publish: {
     steps: [
-      {
-        name: 'Clean',
-        command: 'rm -rf ./dist',
-      },
-      // {
-      //   name: 'Controls',
-      //   command: 'tsc --build ./src',
-      // },
-      // {
-      //   name: 'Css',
-      //   command: 'cd src; cp $(find -name "*.css") --parents ../dist',
-      // },
+      { build: 'build' },
       {
         name: 'Version',
         command: 'yarn version patch',

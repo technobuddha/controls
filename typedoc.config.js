@@ -5,7 +5,6 @@
 
 /** @type import('typedoc').TypeDocOptions */
 const config = {
-// typedoc
   // Configuration
   name: 'controls',
   tsconfig: 'src/tsconfig.typedoc.json',

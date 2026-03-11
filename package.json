@@ -30,7 +30,8 @@
     "test:watch": "npx vitest --typecheck --no-coverage watch",
     "test:full": "npx vitest --typecheck --mode=full run",
     "spell": "npx cspell lint src",
-    "preinstall": "git config core.hooksPath git-hooks"
+    "preinstall": "git config core.hooksPath git-hooks",
+    "start": "build default"
   },
   "dependencies": {
     "@emotion/styled": "11.14.1",
@@ -42,7 +43,7 @@
   },
   "devDependencies": {
     "@mui/material": "7.3.7",
-    "@technobuddha/project": "0.1.0-299",
+    "@technobuddha/project": "0.1.0-418",
     "@types/react": "19.2.13",
     "@types/react-i18next": "8.1.0",
     "@uiw/react-color": "2.9.4",

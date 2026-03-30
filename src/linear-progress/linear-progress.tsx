@@ -11,6 +11,7 @@ export type LinearProgressProps = {
   readonly children?: never;
 };
 
-export const LinearProgress: React.FC<LinearProgressProps> = (props: LinearProgressProps) => (
-  <MuiLinearProgress {...props} />
-);
+export const LinearProgress: React.FC<LinearProgressProps> = ({
+  children,
+  ...props
+}: LinearProgressProps) => <MuiLinearProgress {...props} />;

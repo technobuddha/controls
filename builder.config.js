@@ -2,7 +2,7 @@
 
 /** @type {import('@technobuddha/project/build').Builds} */
 const config = {
-  build: {
+  default: {
     steps: [
       {
         name: 'Clean',
@@ -20,7 +20,7 @@ const config = {
   },
   publish: {
     steps: [
-      { build: 'build' },
+      { build: 'default' },
       {
         name: 'Version',
         command: 'yarn version patch',

@@ -190,15 +190,19 @@ export const PasswordValidation: React.FC<PasswordValidationProps> = ({
         rule.test({ score, password: myPassword, uCount, lCount, dCount, sCount, cCount }),
       );
 
-      setPass(test);
-      setPasswordScore(score);
-      setPasswordWarning(warning ?? empty);
+      (async () => {
+        setPass(test);
+        setPasswordScore(score);
+        setPasswordWarning(warning ?? empty);
 
-      onChange?.(myPassword, validPasswordConfirmation && test.every(Boolean));
+        onChange?.(myPassword, validPasswordConfirmation && test.every(Boolean));
+      })();
     } else {
-      setPass([]);
-      setPasswordScore(0);
-      setPasswordWarning(t('Loading password validation, please wait…'));
+      (async () => {
+        setPass([]);
+        setPasswordScore(0);
+        setPasswordWarning(t('Loading password validation, please wait…'));
+      })();
     }
   }, [
     t,

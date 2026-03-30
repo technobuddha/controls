@@ -23,8 +23,12 @@ export type BoxProps = {
   readonly children?: MuiBoxProps['children'];
 };
 
-export const Box = React.forwardRef<HTMLDivElement, BoxProps>(({ children, ...props }, ref) => (
+export const Box = ({
+  ref,
+  children,
+  ...props
+}: BoxProps & { ref?: React.RefObject<HTMLDivElement | null> }): React.ReactElement => (
   <MuiBox ref={ref} {...props}>
     {children}
   </MuiBox>
-));
+);

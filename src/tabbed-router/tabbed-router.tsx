@@ -1,4 +1,3 @@
-/* eslint-disable react/no-multi-comp */
 import React from 'react';
 import { AppBar, Tab, Tabs } from '@mui/material';
 import { Navigate, useLocation, useNavigate } from 'react-router';
@@ -11,8 +10,14 @@ type TabPanelProps = {
   readonly [key: string]: unknown;
 };
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
-const TabPanel: React.FC<TabPanelProps> = ({ content: Content, value, index, ...other }) => (
+const TabPanel: React.FC<TabPanelProps> = ({
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  content: Content,
+  value,
+  index,
+  children,
+  ...other
+}) => (
   <div
     className={css.panel}
     role="tabpanel"

@@ -21,7 +21,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   onChange,
 }) => {
   const id = React.useId();
-  const [search, setSearch] = React.useState<string>('');
+  const [search, setSearch] = React.useState('');
 
   const handleChange = React.useCallback(
     (text: string) => {

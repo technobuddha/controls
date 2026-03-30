@@ -45,9 +45,9 @@ export const TextField: React.FC<TextFieldProps> = ({
   onChange,
   onValidation,
 }) => {
-  const [text, setText] = React.useState<string>(value ?? '');
-  const [valid, setValid] = React.useState<boolean>(true);
-  const [empty, setEmpty] = React.useState<boolean>(false);
+  const [text, setText] = React.useState(value ?? '');
+  const [valid, setValid] = React.useState(true);
+  const [empty, setEmpty] = React.useState(false);
 
   const validate = React.useCallback(
     (value: string): void => {
@@ -62,12 +62,14 @@ export const TextField: React.FC<TextFieldProps> = ({
         isEmpty = false;
       }
 
-      setValid(isValid);
-      setEmpty(isEmpty);
-      onValidation?.(isValid);
+      (async () => {
+        setValid(isValid);
+        setEmpty(isEmpty);
+        onValidation?.(isValid);
 
-      setText(value);
-      onChange?.(value);
+        setText(value);
+        onChange?.(value);
+      })();
     },
     [onChange, onValidation, required, validation],
   );
@@ -99,7 +101,8 @@ export const TextField: React.FC<TextFieldProps> = ({
 
   React.useEffect(() => {
     validate(value ?? '');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    // eslint-disable-next-line react/exhaustive-deps
   }, [validation, required, validate]);
 
   return (

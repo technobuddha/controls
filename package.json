@@ -1,6 +1,6 @@
 {
   "name": "@technobuddha/controls",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Technobuddha Control Library",
   "author": {
     "name": "Phil Hill",
@@ -43,12 +43,12 @@
   },
   "devDependencies": {
     "@mui/material": "7.3.9",
-    "@technobuddha/project": "0.1.0-460",
+    "@technobuddha/project": "0.1.0-461",
     "@types/react": "19.2.14",
     "@types/react-i18next": "8.1.0",
     "@uiw/react-color": "2.9.6",
     "react": "19.2.4",
-    "react-i18next": "16.6.6",
+    "react-i18next": "17.0.1",
     "react-icons": "5.6.0",
     "react-router": "7.13.2"
   },

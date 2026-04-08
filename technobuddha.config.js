@@ -3,7 +3,7 @@
 const config = {
   directories: {
     'src': {
-      environment: 'vite-client',
+      platform: 'vite-client',
     },
   },
 };

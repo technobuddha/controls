@@ -1,11 +1,12 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/controls",
   "description": "Technobuddha Control Library",
   "version": "0.0.15",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.js",
   "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
@@ -14,10 +15,10 @@
     "type": "git",
     "url": "https://github.com/technobuddha/controls"
   },
+  "homepage": "https://github.com/technobuddha/controls#readme",
   "bugs": {
     "url": "https://github.com/technobuddha/controls/issues"
   },
-  "homepage": "https://github.com/technobuddha/controls#readme",
   "scripts": {
     "build": "build default",
     "lint": "npx eslint src",
@@ -39,15 +40,15 @@
     "colorjs.io": "0.6.1"
   },
   "devDependencies": {
-    "@mui/material": "7.3.9",
-    "@technobuddha/project": "0.1.0-507",
+    "@mui/material": "7.3.10",
+    "@technobuddha/project": "0.1.0-512",
     "@types/react": "19.2.14",
     "@types/react-i18next": "8.1.0",
-    "@uiw/react-color": "2.9.6",
-    "react": "19.2.4",
-    "react-i18next": "17.0.1",
+    "@uiw/react-color": "2.10.1",
+    "react": "19.2.5",
+    "react-i18next": "17.0.2",
     "react-icons": "5.6.0",
-    "react-router": "7.13.2"
+    "react-router": "7.14.0"
   },
   "peerDependencies": {
     "@mui/material": "^7.3.7",

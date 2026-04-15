@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@mui/material": "7.3.10",
-    "@technobuddha/project": "0.1.0-512",
+    "@technobuddha/project": "0.1.0-517",
     "@types/react": "19.2.14",
     "@types/react-i18next": "8.1.0",
     "@uiw/react-color": "2.10.1",

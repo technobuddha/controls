@@ -31,7 +31,6 @@
     "start": "build dev"
   },
   "dependencies": {
-    "@emotion/styled": "11.14.1",
     "@technobuddha/library": "2.1.0-106",
     "@zxcvbn-ts/core": "3.0.4",
     "@zxcvbn-ts/language-common": "3.0.4",
@@ -40,8 +39,9 @@
     "colorjs.io": "0.6.1"
   },
   "devDependencies": {
+    "@emotion/styled": "11.14.1",
     "@mui/material": "7.3.10",
-    "@technobuddha/project": "0.1.0-527",
+    "@technobuddha/project": "0.1.0-528",
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
     "@types/react-i18next": "8.1.0",
@@ -55,6 +55,7 @@
     "typescript": "6.0.2"
   },
   "peerDependencies": {
+    "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.7",
     "@uiw/react-color": "^2.9.4",
     "react": "^19.2.4",

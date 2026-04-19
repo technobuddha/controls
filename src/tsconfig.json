@@ -6,10 +6,10 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "composite": true,
-    "types": ["vite/client"],
     "lib": ["esnext", "dom"],
+    "outDir": "../dist",
     "rootDir": ".",
-    "outDir": "../dist"
+    "types": ["vite/client"]
   },
   "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx"],
   "exclude": ["eslint.config.js"]

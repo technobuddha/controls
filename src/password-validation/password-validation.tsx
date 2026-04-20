@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, useTheme } from '@mui/material';
-import { empty, nbsp, zipperMerge } from '@technobuddha/library';
+import { empty, escapeRegExp, nbsp, zipperMerge } from '@technobuddha/library';
 import { zxcvbn } from '@zxcvbn-ts/core';
 import { useTranslation } from 'react-i18next';
 import { FaThumbsDown, FaThumbsUp } from 'react-icons/fa';
@@ -10,7 +10,7 @@ import { Typography } from '../typography/index.ts';
 
 import { loadZxcvbnOptions } from './load-zxcvbn-options.ts';
 
-import css from './password-validation-activated.module.css' with { type: 'css' };
+import css from './password-validation.module.css' with { type: 'css' };
 
 type ValidationRule = {
   text: string;
@@ -41,7 +41,7 @@ export type PasswordValidationProps = {
   onChange?(this: void, password: string, valid: boolean): void;
 };
 
-const PasswordValidationActivated: React.FC<PasswordValidationProps> = ({
+export const PasswordValidation: React.FC<PasswordValidationProps> = ({
   minLength,
   maxLength,
   strength,
@@ -179,10 +179,10 @@ const PasswordValidationActivated: React.FC<PasswordValidationProps> = ({
         score,
         feedback: { warning },
       } = zxcvbn(myPassword, userInputs);
-      const uCount = myPassword.match(/\p{Lu}/gu)?.length ?? 0;
-      const lCount = myPassword.match(/\p{Ll}/gu)?.length ?? 0;
-      const dCount = myPassword.match(/\p{N}/gu)?.length ?? 0;
-      const sCount = myPassword.match(/[\p{P}\p{S}]/gu)?.length ?? 0;
+      const uCount = myPassword.match(/\p{Lu}/gv)?.length ?? 0;
+      const lCount = myPassword.match(/\p{Ll}/gv)?.length ?? 0;
+      const dCount = myPassword.match(/\p{N}/gv)?.length ?? 0;
+      const sCount = myPassword.match(/[\p{P}\p{S}]/gv)?.length ?? 0;
       const cCount =
         (uCount > 0 ? 1 : 0) + (lCount > 0 ? 1 : 0) + (dCount > 0 ? 1 : 0) + (sCount > 0 ? 1 : 0);
 
@@ -190,15 +190,19 @@ const PasswordValidationActivated: React.FC<PasswordValidationProps> = ({
         rule.test({ score, password: myPassword, uCount, lCount, dCount, sCount, cCount }),
       );
 
-      setPass(test);
-      setPasswordScore(score);
-      setPasswordWarning(warning ?? empty);
+      (async () => {
+        setPass(test);
+        setPasswordScore(score);
+        setPasswordWarning(warning ?? empty);
 
-      onChange?.(myPassword, validPasswordConfirmation && test.every(Boolean));
+        onChange?.(myPassword, validPasswordConfirmation && test.every(Boolean));
+      })();
     } else {
-      setPass([]);
-      setPasswordScore(0);
-      setPasswordWarning(t('Loading password validation, please wait...'));
+      (async () => {
+        setPass([]);
+        setPasswordScore(0);
+        setPasswordWarning(t('Loading password validation, please wait…'));
+      })();
     }
   }, [
     t,
@@ -230,7 +234,8 @@ const PasswordValidationActivated: React.FC<PasswordValidationProps> = ({
         value={passwordConfirmation}
         helperText={validPasswordConfirmation ? nbsp : t('Passwords must match')}
         required
-        validation={new RegExp(`^${RegExp.escape(myPassword)}$`, 'u')}
+        // eslint-disable-next-line require-unicode-regexp
+        validation={new RegExp(`^${escapeRegExp(myPassword)}$`, 'u')}
       />
       <Box className={css.validation}>
         {Boolean(strength) && (
@@ -287,5 +292,3 @@ const PasswordValidationActivated: React.FC<PasswordValidationProps> = ({
     </Box>
   );
 };
-
-export default PasswordValidationActivated;

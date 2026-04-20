@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-handler-names */
 import React from 'react';
 import {
   FormControl,

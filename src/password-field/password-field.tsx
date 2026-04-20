@@ -27,8 +27,8 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   onChange,
   onValidation,
 }) => {
-  const [password, setPassword] = React.useState<string>(value ?? '');
-  const [showPassword, setShowPassword] = React.useState<boolean>(false);
+  const [password, setPassword] = React.useState(value ?? '');
+  const [showPassword, setShowPassword] = React.useState(false);
 
   const handleChange = React.useCallback(
     (text: string): void => {

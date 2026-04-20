@@ -1,11 +1,11 @@
 import React from 'react';
-import { type AnchorHTMLAttributes } from 'react';
+// import { type AnchorHTMLAttributes } from 'react';
 import { type LinkProps as MuiLinkProps } from '@mui/material';
 import MuiLink from '@mui/material/Link';
 import { type LinkProps as RouterLinkProps } from 'react-router';
 import { useNavigate } from 'react-router';
 
-export type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
+export type LinkProps = /*AnchorHTMLAttributes<HTMLAnchorElement> &*/ {
   readonly to: string;
   readonly replace?: RouterLinkProps['replace'];
   readonly classes?: MuiLinkProps['classes'];
@@ -13,6 +13,7 @@ export type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   readonly typographyClasses?: MuiLinkProps['TypographyClasses'];
   readonly underline?: MuiLinkProps['underline'];
   readonly variant?: MuiLinkProps['variant'];
+  readonly children?: React.ReactNode;
 };
 
 export const Link: React.FC<LinkProps> = ({ replace, to, ...myProps }: LinkProps) => {

@@ -4,6 +4,8 @@ import { Tooltip as MuiTooltip, type TooltipProps as MuiTooltipProps } from '@mu
 export type TooltipProps = {
   readonly title: MuiTooltipProps['title'];
   readonly placement?: MuiTooltipProps['placement'];
+  readonly onOpen?: MuiTooltipProps['onOpen'];
+  readonly onClose?: MuiTooltipProps['onClose'];
 
   readonly children: MuiTooltipProps['children'];
 };

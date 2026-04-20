@@ -1,48 +1,74 @@
 {
-  "name": "controls",
-  "version": "0.0.1",
-  "description": "Technobuddha application",
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@technobuddha/controls",
+  "description": "Technobuddha Control Library",
+  "version": "0.1.0-1",
+  "license": "MIT",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/technobuddha/controls"
   },
+  "homepage": "https://github.com/technobuddha/controls#readme",
   "bugs": {
     "url": "https://github.com/technobuddha/controls/issues"
   },
-  "homepage": "https://github.com/technobuddha/controls#readme",
-  "packageManager": "yarn@4.10.3",
-  "devDependencies": {
-    "@technobuddha/builder": "0.99.23",
-    "@technobuddha/project": "0.99.135",
-    "vite": "7.1.9",
-    "vitest": "3.2.4"
+  "scripts": {
+    "build": "build default",
+    "lint": "npx eslint src",
+    "publish": "build publish",
+    "test": "npx vitest --typecheck run",
+    "test:watch": "npx vitest --typecheck --no-coverage watch",
+    "test:full": "npx vitest --typecheck --mode=full run",
+    "spell": "npx cspell lint src",
+    "preinstall": "git config core.hooksPath git-hooks",
+    "start": "build dev"
   },
   "dependencies": {
-    "@mui/material": "7.3.4",
-    "@technobuddha/library": "2.0.40",
-    "@types/react": "19.2.2",
-    "@uiw/react-color": "2.9.0",
+    "@technobuddha/library": "2.1.0-111",
     "@zxcvbn-ts/core": "3.0.4",
     "@zxcvbn-ts/language-common": "3.0.4",
     "@zxcvbn-ts/language-en": "3.0.2",
     "clsx": "2.1.1",
-    "colorjs.io": "0.5.2",
-    "react": "19.2.0",
-    "react-icons": "5.5.0",
-    "react-router": "7.9.3"
+    "colorjs.io": "0.6.1"
+  },
+  "devDependencies": {
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "7.3.10",
+    "@technobuddha/project": "1.0.0-8",
+    "@types/node": "25.6.0",
+    "@types/react": "19.2.14",
+    "@types/react-i18next": "8.1.0",
+    "@uiw/react-color": "2.10.1",
+    "cspell": "10.0.0",
+    "react": "19.2.5",
+    "react-i18next": "17.0.2",
+    "react-icons": "5.6.0",
+    "react-router": "7.14.0",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3"
+  },
+  "peerDependencies": {
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.7",
+    "@uiw/react-color": "^2.9.4",
+    "react": "^19.2.4",
+    "react-i18next": "^16.3.5",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.13.0"
+  },
+  "engines": {
+    "node": ">=25.0.0"
   },
   "technobuddhaProject": {
-    "version": "0.99.135",
-    "created": "2025-10-07T11:47:45.356Z",
-    "updated": "2025-10-07T11:49:07.728Z"
+    "created": "2025-10-07T11:47:45.356Z"
   },
-  "type": "module",
-  "engines": {
-    "node": ">=24.0.0"
-  }
+  "packageManager": "yarn@4.12.0",
+  "stableVersion": "0.0.17"
 }

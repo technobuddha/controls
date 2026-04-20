@@ -7,10 +7,10 @@
   "compilerOptions": {
     "composite": true,
     "lib": ["esnext", "dom"],
-    "outDir": "../dist",
-    "rootDir": ".",
-    "types": ["vite/client"]
+    "types": ["vite/client", "node"],
+    "noEmit": true
   },
   "include": ["**/*.ts", "**/*.d.ts", "**/*.tsx"],
-  "exclude": ["eslint.config.js"]
+  "exclude": ["**/__tests__/**/*.*"],
+  "references": []
 }

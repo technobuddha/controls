@@ -2,11 +2,12 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/controls",
   "description": "Technobuddha Control Library",
-  "version": "0.1.0-1",
+  "version": "0.1.0-2",
+  "stableVersion": "0.0.17",
   "license": "MIT",
   "type": "module",
-  "types": "dist/index.d.ts",
   "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
@@ -27,11 +28,11 @@
     "test:watch": "npx vitest --typecheck --no-coverage watch",
     "test:full": "npx vitest --typecheck --mode=full run",
     "spell": "npx cspell lint src",
-    "preinstall": "git config core.hooksPath git-hooks",
-    "start": "build dev"
+    "start": "build dev",
+    "prepare": "npx husky"
   },
   "dependencies": {
-    "@technobuddha/library": "2.1.0-111",
+    "@technobuddha/library": "2.1.0-115",
     "@zxcvbn-ts/core": "3.0.4",
     "@zxcvbn-ts/language-common": "3.0.4",
     "@zxcvbn-ts/language-en": "3.0.2",
@@ -41,16 +42,17 @@
   "devDependencies": {
     "@emotion/styled": "11.14.1",
     "@mui/material": "7.3.10",
-    "@technobuddha/project": "1.0.0-8",
+    "@technobuddha/project": "1.0.0-31",
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
     "@types/react-i18next": "8.1.0",
     "@uiw/react-color": "2.10.1",
     "cspell": "10.0.0",
+    "husky": "9.1.7",
     "react": "19.2.5",
-    "react-i18next": "17.0.2",
+    "react-i18next": "17.0.4",
     "react-icons": "5.6.0",
-    "react-router": "7.14.0",
+    "react-router": "7.14.2",
     "tsx": "4.21.0",
     "typescript": "6.0.3"
   },
@@ -69,6 +71,5 @@
   "technobuddhaProject": {
     "created": "2025-10-07T11:47:45.356Z"
   },
-  "packageManager": "yarn@4.12.0",
-  "stableVersion": "0.0.17"
+  "packageManager": "yarn@4.12.0"
 }

@@ -1,0 +1,20 @@
+// cspell:disable
+/* eslint eslint-comments/no-unlimited-disable: "off" */
+/* eslint-disable */
+{
+  // 🚨
+  // 🚨 Created by css-module-type-definition.  All changes will be OVERRIDDEN!
+  // 🚨
+}
+
+// prettier-ignore
+type Select = {
+  readonly 'formControl': '_formControl_wu8ou_1';
+  readonly 'select': '_select_wu8ou_2';
+};
+
+declare const select: Select;
+
+export default select;
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlbGVjdC5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O1dBQUM7V0FDRSIsImZpbGUiOiJzZWxlY3QubW9kdWxlLmQuY3NzLnRzIiwic291cmNlUm9vdCI6IiJ9

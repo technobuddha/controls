@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  InputAdornment,
-  TextField as MuiTextField,
-  type TextFieldProps as MuiTextFieldProps,
-} from '@mui/material';
+import { Box, InputAdornment, TextField as MuiTextField } from '@mui/material';
 
 import css from './text-field.module.css' with { type: 'css' };
 
@@ -122,7 +117,7 @@ export const TextField: React.FC<TextFieldProps> = ({
       helperText={valid || empty ? helperText : `${label} is invalid`}
       required={required}
       color="primary"
-      slotProps={slotProps as MuiTextFieldProps['slotProps']}
+      slotProps={slotProps}
     />
   );
 };

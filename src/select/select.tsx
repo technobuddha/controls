@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/consistent-destructuring */
 import React from 'react';
 import {
   FormControl,
@@ -43,16 +42,13 @@ export function Select<T extends string | number = string>(props: SelectProps<T>
   const undefinedText = React.useMemo(
     () =>
       'allowUndefined' in props ?
-        // eslint-disable-next-line react/prefer-destructuring-assignment
         props.allowUndefined === true ?
           '(undefined)'
-          // eslint-disable-next-line react/prefer-destructuring-assignment
         : props.allowUndefined
       : undefined,
     [props],
   );
 
-  // eslint-disable-next-line react/prefer-destructuring-assignment
   const value = React.useMemo(() => props.value ?? undefinedText ?? '', [props, undefinedText]);
 
   const handleChange = React.useCallback(
@@ -61,14 +57,11 @@ export function Select<T extends string | number = string>(props: SelectProps<T>
 
       if ('allowUndefined' in props) {
         if (v === undefinedText) {
-          // eslint-disable-next-line react/prefer-destructuring-assignment
           props.onChange?.(undefined);
         } else {
-          // eslint-disable-next-line react/prefer-destructuring-assignment
           props.onChange?.(v);
         }
       } else {
-        // eslint-disable-next-line react/prefer-destructuring-assignment
         props.onChange?.(v);
       }
     },

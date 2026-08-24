@@ -6,6 +6,11 @@ const config = {
       platform: 'vite-client',
     },
   },
+  lint: {
+    rules: {
+      'css/no-invalid-properties': { rule: 'off' },
+    }
+  }
 };
 
 export default config;

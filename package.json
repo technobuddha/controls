@@ -1,16 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/controls",
+  "version": "0.1.0-3",
   "description": "Technobuddha Control Library",
-  "version": "0.1.0-2",
-  "stableVersion": "0.0.17",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
     "name": "Phil Hill",
-    "email": "phil@technobuddha.com"
+    "email": "phil@technobuddha.com",
+    "url": "https://technobuddha.com"
   },
   "repository": {
     "type": "git",
@@ -29,10 +29,10 @@
     "test:full": "npx vitest --typecheck --mode=full run",
     "spell": "npx cspell lint src",
     "start": "build dev",
-    "prepare": "npx husky"
+    "prepare": "husky"
   },
   "dependencies": {
-    "@technobuddha/library": "2.1.0-115",
+    "@technobuddha/library": "2.1.0-183",
     "@zxcvbn-ts/core": "3.0.4",
     "@zxcvbn-ts/language-common": "3.0.4",
     "@zxcvbn-ts/language-en": "3.0.2",
@@ -40,20 +40,22 @@
     "colorjs.io": "0.6.1"
   },
   "devDependencies": {
+    "@cspell/cspell-types": "10.0.1",
     "@emotion/styled": "11.14.1",
     "@mui/material": "7.3.10",
-    "@technobuddha/project": "1.0.0-31",
-    "@types/node": "25.6.0",
+    "@technobuddha/project": "1.0.0-183",
+    "@types/node": "26.2.0",
     "@types/react": "19.2.14",
     "@types/react-i18next": "8.1.0",
     "@uiw/react-color": "2.10.1",
-    "cspell": "10.0.0",
+    "cspell": "10.0.1",
+    "css-module-type-definitions": "2.0.0-43",
     "husky": "9.1.7",
     "react": "19.2.5",
     "react-i18next": "17.0.4",
     "react-icons": "5.6.0",
     "react-router": "7.14.2",
-    "tsx": "4.21.0",
+    "tsx": "4.23.12",
     "typescript": "6.0.3"
   },
   "peerDependencies": {
@@ -71,5 +73,5 @@
   "technobuddhaProject": {
     "created": "2025-10-07T11:47:45.356Z"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.18.0"
 }

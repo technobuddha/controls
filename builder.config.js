@@ -1,19 +1,19 @@
 //@ts-check
 
-/** @type {import('@technobuddha/project/build').Builds} */
+/** @type import('\@technobuddha/project/build').Builds */
 const config = {
   default: {
     steps: [
       {
-        name: 'Clean',
+        display: 'Clean',
         command: 'rm -rf ./dist'
       },
       {
-        name: 'Controls',
+        display: 'Controls',
         command: 'npx tsc --build ./src',
       },
       {
-        name: 'Css',
+        display: 'Css',
         command: 'cd src; cp $(find -name "*.css") --parents ../dist',
       }
     ]
@@ -22,11 +22,11 @@ const config = {
     steps: [
       { build: 'default' },
       {
-        name: 'Version',
+        display: 'Version',
         command: 'yarn version prerelease',
       },
       {
-        name: 'Publish',
+        display: 'Publish',
         command: 'yarn npm publish --access=public',
       },
     ]

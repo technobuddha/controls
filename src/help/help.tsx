@@ -63,7 +63,7 @@ export const Help: React.FC<HelpProps> = ({ className, style, title, children })
             <Typography className={css.title} variant="h1">
               {titleCase(title)}
             </Typography>
-            <IconButton className={css.close} onClick={handleClose}>
+            <IconButton onClick={handleClose}>
               <RiCloseLargeLine />
             </IconButton>
           </Box>

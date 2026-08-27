@@ -2199,7 +2199,7 @@ __metadata:
     clsx: "npm:2.1.1"
     colorjs.io: "npm:0.6.1"
     cspell: "npm:10.0.1"
-    css-module-type-definitions: "npm:2.0.0-43"
+    css-module-type-definitions: "npm:2.0.0-44"
     husky: "npm:9.1.7"
     react: "npm:19.2.5"
     react-i18next: "npm:17.0.4"
@@ -2217,13 +2217,6 @@ __metadata:
     react-router: ^7.13.0
   languageName: unknown
   linkType: soft
-
-"@technobuddha/library@npm:2.1.0-182":
-  version: 2.1.0-182
-  resolution: "@technobuddha/library@npm:2.1.0-182"
-  checksum: 10c0/55f183b03d63482166528bf380044436b124e36c55c47d042d1eca02eae44d04a1ab24a41382efb02d6682f4f70d7511612277d242b6f4dff08bed0ae8c65242
-  languageName: node
-  linkType: hard
 
 "@technobuddha/library@npm:2.1.0-183":
   version: 2.1.0-183
@@ -4351,11 +4344,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-module-type-definitions@npm:2.0.0-43":
-  version: 2.0.0-43
-  resolution: "css-module-type-definitions@npm:2.0.0-43"
+"css-module-type-definitions@npm:2.0.0-44":
+  version: 2.0.0-44
+  resolution: "css-module-type-definitions@npm:2.0.0-44"
   dependencies:
-    "@technobuddha/library": "npm:2.1.0-182"
+    "@technobuddha/library": "npm:2.1.0-183"
     chalk: "npm:6.0.0"
     chokidar: "npm:5.0.0"
     commander: "npm:15.0.0"
@@ -4375,7 +4368,7 @@ __metadata:
     vscode-uri: "npm:3.1.0"
   bin:
     cmtd: dist/cli/cmtd.js
-  checksum: 10c0/024e5fce798d94e01d71bf56aaf06bdc94039d4a615f1f8bc7f8bc8adac268b9afea4aec57ce0dc840411d23ce60bb7a6e2e4ea63f68eab43ab7540a9af2e987
+  checksum: 10c0/7fdd023beee03d0a88aa8a838e607c35fc2767ebe1ba71d2e4c37373c9c9ef58b0c0c716376151909d350e976e212ba5d813b8113b0b12e580bf94624d5e116d
   languageName: node
   linkType: hard
 

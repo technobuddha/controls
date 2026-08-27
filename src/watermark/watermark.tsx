@@ -1,6 +1,6 @@
 import React from 'react';
 
-import css from './watermark.module.css' with { type: 'css' };
+import css from './watermark.module.css';
 
 export type WatermarkProps = {
   readonly children?: React.ReactNode;

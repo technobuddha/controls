@@ -1,6 +1,6 @@
 import React from 'react';
 
-import css from './wait.module.css' with { type: 'css' };
+import css from './wait.module.css';
 
 export type WaitProps = {
   children?: never;

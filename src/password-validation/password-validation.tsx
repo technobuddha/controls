@@ -10,7 +10,7 @@ import { Typography } from '../typography/index.ts';
 
 import { loadZxcvbnOptions } from './load-zxcvbn-options.ts';
 
-import css from './password-validation.module.css' with { type: 'css' };
+import css from './password-validation.module.css';
 
 type ValidationRule = {
   text: string;

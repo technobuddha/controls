@@ -11,7 +11,7 @@ import { IconButton } from '../icon-button/index.ts';
 import { Tooltip } from '../tooltip/index.ts';
 import { Typography } from '../typography/index.ts';
 
-import css from './help.module.css' with { type: 'css' };
+import css from './help.module.css';
 
 export type HelpProps = {
   readonly className?: string;

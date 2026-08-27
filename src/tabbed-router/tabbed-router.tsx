@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Tab, Tabs } from '@mui/material';
 import { Navigate, useLocation, useNavigate } from 'react-router';
 
-import css from './tabbed-router.module.css' with { type: 'css' };
+import css from './tabbed-router.module.css';
 
 type TabPanelProps = {
   readonly content: React.ComponentType;

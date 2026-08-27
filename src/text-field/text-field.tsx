@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, InputAdornment, TextField as MuiTextField } from '@mui/material';
 
-import css from './text-field.module.css' with { type: 'css' };
+import css from './text-field.module.css';
 
 export type TextFieldProps = {
   readonly className?: string;

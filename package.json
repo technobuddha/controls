@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@technobuddha/controls",
-  "version": "1.0.0-6",
+  "version": "1.0.0-7",
   "description": "Technobuddha Control Library",
   "license": "MIT",
   "type": "module",
@@ -32,7 +32,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@technobuddha/library": "2.1.0-196",
+    "@technobuddha/library": "2.1.0-197",
     "@zxcvbn-ts/core": "3.0.4",
     "@zxcvbn-ts/language-common": "3.0.4",
     "@zxcvbn-ts/language-en": "3.0.2",
@@ -43,13 +43,13 @@
     "@cspell/cspell-types": "10.1.1",
     "@emotion/styled": "11.14.1",
     "@mui/material": "7.3.11",
-    "@technobuddha/project": "1.0.0-203",
+    "@technobuddha/project": "1.0.0-207",
     "@types/node": "26.4.0",
     "@types/react": "19.2.18",
     "@types/react-i18next": "8.1.0",
     "@uiw/react-color": "2.10.3",
     "cspell": "10.1.1",
-    "css-module-type-definitions": "2.0.0-52",
+    "css-module-type-definitions": "2.0.0-53",
     "husky": "9.1.7",
     "react": "19.2.8",
     "react-i18next": "17.0.12",

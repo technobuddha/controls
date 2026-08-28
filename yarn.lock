@@ -2187,8 +2187,8 @@ __metadata:
     "@cspell/cspell-types": "npm:10.1.1"
     "@emotion/styled": "npm:11.14.1"
     "@mui/material": "npm:7.3.10"
-    "@technobuddha/library": "npm:2.1.0-188"
-    "@technobuddha/project": "npm:1.0.0-195"
+    "@technobuddha/library": "npm:2.1.0-190"
+    "@technobuddha/project": "npm:1.0.0-197"
     "@types/node": "npm:26.3.0"
     "@types/react": "npm:19.2.14"
     "@types/react-i18next": "npm:8.1.0"
@@ -2199,7 +2199,7 @@ __metadata:
     clsx: "npm:2.1.1"
     colorjs.io: "npm:0.6.1"
     cspell: "npm:10.1.1"
-    css-module-type-definitions: "npm:2.0.0-44"
+    css-module-type-definitions: "npm:2.0.0-46"
     husky: "npm:9.1.7"
     react: "npm:19.2.5"
     react-i18next: "npm:17.0.4"
@@ -2218,23 +2218,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@technobuddha/library@npm:2.1.0-183":
-  version: 2.1.0-183
-  resolution: "@technobuddha/library@npm:2.1.0-183"
-  checksum: 10c0/3f830ef18e9888706bb2ea2dbf9a585245edd876b0150e444be50c48159ea51b8ce112a2c9dc9d9eee7c60061a694b9a7a85b1f78dc11d4dd71cddac53f19fae
+"@technobuddha/library@npm:2.1.0-190":
+  version: 2.1.0-190
+  resolution: "@technobuddha/library@npm:2.1.0-190"
+  checksum: 10c0/c6ca8dbe919894a29255dc4324a2e2fbacad4f223eb5e669518d0c5b2dfcf7cd440a7a2edc17927b012589018379f57c401204bf5c8539d473729734b9b709da
   languageName: node
   linkType: hard
 
-"@technobuddha/library@npm:2.1.0-188":
-  version: 2.1.0-188
-  resolution: "@technobuddha/library@npm:2.1.0-188"
-  checksum: 10c0/96b0ad7bf1714ab4302a86cf564641b285faaa181a7653c1b9adc106263e4c05271a013acbdc4a0cd6a62ff82c6468776fe8abc8e605e63e6026b775c7a907b3
-  languageName: node
-  linkType: hard
-
-"@technobuddha/project@npm:1.0.0-195":
-  version: 1.0.0-195
-  resolution: "@technobuddha/project@npm:1.0.0-195"
+"@technobuddha/project@npm:1.0.0-197":
+  version: 1.0.0-197
+  resolution: "@technobuddha/project@npm:1.0.0-197"
   dependencies:
     "@commander-js/extra-typings": "npm:15.0.0"
     "@cspell/cspell-types": "npm:10.1.1"
@@ -2244,7 +2237,7 @@ __metadata:
     "@eslint/css": "npm:1.4.0"
     "@eslint/markdown": "npm:8.0.3"
     "@html-eslint/eslint-plugin": "npm:0.65.0"
-    "@technobuddha/library": "npm:2.1.0-188"
+    "@technobuddha/library": "npm:2.1.0-190"
     "@types/cli-progress": "npm:^3.11.6"
     "@types/eslint": "npm:9.6.1"
     "@types/ignore-walk": "npm:4.0.3"
@@ -2282,7 +2275,7 @@ __metadata:
     eslint-plugin-react-web-api: "npm:5.18.6"
     eslint-plugin-react-x: "npm:5.18.6"
     eslint-plugin-simple-import-sort: "npm:14.0.0"
-    eslint-plugin-technobuddha: "npm:2.0.0-68"
+    eslint-plugin-technobuddha: "npm:2.0.0-70"
     eslint-plugin-unicorn: "npm:73.0.0"
     globals: "npm:17.11.0"
     husky: "npm:9.1.7"
@@ -2313,7 +2306,7 @@ __metadata:
     eslint-comments: dist/eslint-comments/eslint-comments.js
     tb: dist/tb/tb.js
     unexported-files: dist/unexported-files/unexported-files.js
-  checksum: 10c0/8efb9f209a63814b6a98e21b49f4814078dbf01db7cab28f457e9b7c815f1db5e9b059e6ba464dfab4393d490918ea902b8bce5f3665c7878ae1873b1062f4d8
+  checksum: 10c0/74c305fe83acd818df63a0cfc505148b5e0e8a9b5a4d3776a89232ddd8aa434c2a54f5f707247c291bf7c8894e679035c1aff03041cba45a002525376ad32c64
   languageName: node
   linkType: hard
 
@@ -4218,11 +4211,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-module-type-definitions@npm:2.0.0-44":
-  version: 2.0.0-44
-  resolution: "css-module-type-definitions@npm:2.0.0-44"
+"css-module-type-definitions@npm:2.0.0-46":
+  version: 2.0.0-46
+  resolution: "css-module-type-definitions@npm:2.0.0-46"
   dependencies:
-    "@technobuddha/library": "npm:2.1.0-183"
+    "@technobuddha/library": "npm:2.1.0-190"
     chalk: "npm:6.0.0"
     chokidar: "npm:5.0.0"
     commander: "npm:15.0.0"
@@ -4238,11 +4231,11 @@ __metadata:
     source-map-js: "npm:1.2.1"
     sugarss: "npm:5.0.1"
     typescript: "npm:6.0.3"
-    vite: "npm:8.2.1"
+    vite: "npm:8.2.2"
     vscode-uri: "npm:3.1.0"
   bin:
     cmtd: dist/cli/cmtd.js
-  checksum: 10c0/7fdd023beee03d0a88aa8a838e607c35fc2767ebe1ba71d2e4c37373c9c9ef58b0c0c716376151909d350e976e212ba5d813b8113b0b12e580bf94624d5e116d
+  checksum: 10c0/00ce3a488bf62266c38851284b371f8bcaefb18bb0ac8decaeb97294bb5b715c93bb98ad9943ed6c768b15e555554edc37e379df6d6149fd46034c7ba9d3348b
   languageName: node
   linkType: hard
 
@@ -5312,17 +5305,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-technobuddha@npm:2.0.0-68":
-  version: 2.0.0-68
-  resolution: "eslint-plugin-technobuddha@npm:2.0.0-68"
+"eslint-plugin-technobuddha@npm:2.0.0-70":
+  version: 2.0.0-70
+  resolution: "eslint-plugin-technobuddha@npm:2.0.0-70"
   dependencies:
     "@microsoft/tsdoc": "npm:0.16.0"
     "@microsoft/tsdoc-config": "npm:0.18.1"
-    "@technobuddha/library": "npm:2.1.0-188"
+    "@technobuddha/library": "npm:2.1.0-190"
     eslint: "npm:10.9.1"
     eslint-vitest-rule-tester: "npm:3.1.0"
     get-tsconfig: "npm:4.14.0"
-  checksum: 10c0/14ef49562ddbfce98dad4e0c3709de821911fa92ec21573a274b3d1547e2c7eabf611413315789a388439a42109a12ffb650afb6eb521e063153434ac58f32c0
+  checksum: 10c0/d09e90e5b5ba32cd75ccb53d9c2c0a3de8fc66f629b616757e5c12783019341decec504d71b3420f493e79fb025532097d6e641bbdfa20368e5274c1c3407919
   languageName: node
   linkType: hard
 
@@ -8325,7 +8318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.25, postcss@npm:^8.5.26":
+"postcss@npm:^8.5.26":
   version: 8.5.26
   resolution: "postcss@npm:8.5.26"
   dependencies:
@@ -8789,7 +8782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rolldown@npm:~1.2.1, rolldown@npm:~1.2.4":
+"rolldown@npm:~1.2.4":
   version: 1.2.5
   resolution: "rolldown@npm:1.2.5"
   dependencies:
@@ -9923,63 +9916,6 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
-  languageName: node
-  linkType: hard
-
-"vite@npm:8.2.1":
-  version: 8.2.1
-  resolution: "vite@npm:8.2.1"
-  dependencies:
-    fsevents: "npm:~2.3.3"
-    lightningcss: "npm:^1.33.0"
-    picomatch: "npm:^4.0.5"
-    postcss: "npm:^8.5.25"
-    rolldown: "npm:~1.2.1"
-    tinyglobby: "npm:^0.2.17"
-  peerDependencies:
-    "@types/node": ^20.19.0 || >=22.12.0
-    "@vitejs/devtools": ^0.4.0
-    esbuild: ^0.27.0 || ^0.28.0
-    jiti: ">=1.21.0"
-    less: ^4.0.0
-    sass: ^1.70.0
-    sass-embedded: ^1.70.0
-    stylus: ">=0.54.8"
-    sugarss: ^5.0.0
-    terser: ^5.16.0
-    tsx: ^4.8.1
-    yaml: ^2.4.2
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    "@vitejs/devtools":
-      optional: true
-    esbuild:
-      optional: true
-    jiti:
-      optional: true
-    less:
-      optional: true
-    sass:
-      optional: true
-    sass-embedded:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-    tsx:
-      optional: true
-    yaml:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 10c0/e958dd07502deeb552f04dba59418ff1eb63183add416fd7a3e3badabf5d36edc6834b94c916f9f9233f976bb1671e3e9989d90e869059af07b0d43f7fc078c2
   languageName: node
   linkType: hard
 
